@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지렁이 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-page">
+      <section class="game-card" aria-label="지렁이 게임">
+        <h1>🪱 지렁이 게임</h1>
+        <p class="help-text">방향키 또는 WASD로 지렁이를 움직여 먹이를 먹어보세요!</p>
+
+        <div class="hud">
+          <p>점수: <strong id="score">0</strong></p>
+          <p>최고 점수: <strong id="high-score">0</strong></p>
+        </div>
+
+        <canvas
+          id="game-board"
+          width="400"
+          height="400"
+          role="img"
+          aria-label="지렁이 게임 보드"
+        ></canvas>
+
+        <div class="controls">
+          <button id="start-btn" type="button">게임 시작</button>
+          <button id="restart-btn" type="button">다시 시작</button>
+        </div>
+
+        <p id="status" class="status" aria-live="polite">시작 버튼을 눌러 게임을 시작하세요.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
